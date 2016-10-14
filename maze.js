@@ -1,7 +1,7 @@
-window.onload = function() {
-    $("boundary1").onmouseover = overBoundary;
-};
 
-function overBoundary() {
-    $("boundary1").addClassName("youlose");
-}
+document.addEventListener("DOMContentLoaded", function()
+{
+
+	document.getElementById("boundary1").addEventListener("mouseover", function()
+		{ this.className += " youlose";});
+});
