@@ -1,5 +1,7 @@
-var color = document.getElementById("boundary1");
-color.mouseover(function()
- {
- 	color.css("background-color","#ff8888");
- });
+window.onload = function() {
+    $("boundary1").onmouseover = overBoundary;
+};
+
+function overBoundary() {
+    $("boundary1").addClassName("youlose");
+}
